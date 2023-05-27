@@ -1,0 +1,6 @@
+S3_BUCKET = "maneendra-bucket"
+TABLE = "maneendra-fileinfo"
+AWS_ACCESS_KEY = "AKIAWZ66XHAGV7SMXJFE"
+AWS_SECRET_KEY = "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"
+AWS_REGION="us-east-2"
+LOGIN_TABLE = "maneendra-login"

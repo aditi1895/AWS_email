@@ -1,0 +1,6 @@
+BUCKET = "shivabanoth"
+TABLE = "shivabanoth-table"
+AWS_ACCESS_KEY = "AKIA5MEAB442MQDHCWBB"
+AWS_SECRET_KEY = "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"
+AWS_REGION="us-east-1"
+TABLE_LOGIN = "shivabanoth-login"

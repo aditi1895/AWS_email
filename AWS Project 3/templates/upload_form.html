@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Upload Page</title>
+    </head>
+    <body>
+        <div>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msgs in messages %}
+                <div class="alert alert-info" role="alert">
+                    {{msgs}}
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        </div>
+        <form action="/upload"  method="POST" enctype="multipart/form-data" style="text-align: center;  margin: 50px 70px 50px 90px;">
+        <label>Colon(;) Seperated Email Addresses (upto 5)</label>
+        <br>
+        <input type="text" name = "Email">
+        <br>
+        <label>Upload File/Files</label>
+        <br>
+        <input type="file" name="upload_file">
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+    </body>
+</html>

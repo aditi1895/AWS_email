@@ -1,0 +1,8 @@
+gunicorn
+gevent
+Flask
+Flask-RESTful
+Flask-cors
+boto3
+werkzeug
+regex

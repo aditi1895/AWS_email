@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FlaskApp</title>
+    <style>
+        form {
+        margin: 0 auto;
+        width: 400px;
+        padding: 2em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        }
+
+        form li + li {
+        margin-top: 1em;
+        }
+
+        label {
+        display: inline-block;
+        width: 300px;
+        text-align: left;
+        }
+
+        input,
+        textarea {
+        font: 1em sans-serif;
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+        }
+
+        input:focus,
+        textarea:focus {
+        border-color: #000;
+        }
+
+        textarea {
+        vertical-align: top;
+        height: 5em;
+        }
+
+        .button {
+        padding-left: 90px;
+        }
+
+        button {
+        margin-left: .5em;
+        }
+    </style>
+</head>
+<body style="line-height:30px;">
+<form action="{{url_for('create')}}" method="POST" enctype="multipart/form-data">
+
+    <label for="user_file">Upload Your File</label>
+    <br>
+    <input type="file" name="user_file">
+    <br>
+    <label for="Email Addresses">Email Addresses (Comma Seperated)</label>
+    <br>
+    <input type="text" name="Email Addresses">
+    <br>
+    <button type="submit">Upload</button>
+
+</form>
+</body>
+</html>
