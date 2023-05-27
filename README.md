@@ -1,1 +1,3 @@
 # AWS_email
+
+AWS Email projects: This is a service hosted on EC2, it has a webpage which takes an image and some email ids as input. After clicking on submit, it uploads the image to s3 bucket and sends out an email attaching this image using lambda and SES to the email addresses provided in the webpage. Furthermore, as the email recievers opens the attachment, SNS service informs a lambda about it and when all of the recievers has opened the attachment once, it deletes the image from s3 bucket.
